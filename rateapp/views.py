@@ -1,24 +1,23 @@
 from django.shortcuts import render,redirect
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
+@login_required(login_url='/accounts/login/')
 def home(request):
-    posts = Post_all_posts()
-    return render(request, 'home.html' ,{'posts':posts})
+    projects = Project.get_projects()
+    return render(request,'home.html',{"projects":projects})
 
-
-def post_image(request):
+@login_required(login_url='/accounts/login/')
+def new_project(request):
+    current_user = request.user
     if request.method == 'POST':
-        form = PostForm(request.POST, request.FILES)
+        form = NewProjectForm(request.POST, request.FILES)
         if form.is_valid():
-            post = form.save(commit=False)
-            post.user = request.user
-            post.save()
-            
+            project = form.save(commit=False)
+            project.profile = current_user
+            project.save()
+        return redirect('index')
+
     else:
-        form = PostForm()
-        
-    try:
-        posts = Post.objects.all()
-    except Post.DoesNotExist:
-        posts = None
-    return render(request,'post_image.html', {'posts': posts, 'form': form})
+        form = NewProjectForm()
+    return render(request, 'new_project.html', {"form": form})
