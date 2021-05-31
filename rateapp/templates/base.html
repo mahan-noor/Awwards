@@ -1,0 +1,27 @@
+{% load bootstrap4 %}
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% if title %}
+    <title>Awwards - {{title}}</title>
+    {% else %}
+    <title> Awwards </title>
+    {% endif %}
+
+
+    {% block styles %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Arsenal:400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allura|Caveat|Cookie|Courgette|Damion|Gloria+Hallelujah|Gochi+Hand|Kalam|Nanum+Pen+Script|Oleo+Script|Playball|Reenie+Beanie|Satisfy&display=swap" rel="stylesheet">
+    {% endblock %}
+</head>
