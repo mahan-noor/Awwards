@@ -1,0 +1,58 @@
+{% extends 'base.html' %} 
+{% load bootstrap4 %} 
+{% load static%} 
+{% block content %}
+
+<div class="container">
+  {% if profile_details.profile_pic %}
+  <div class="jumbotron burner" style="height: 50%; color: aliceblue">
+    <div class="avii m-auto">
+      <img
+        src="{{profile.profile.profile_pic.cdn_url}}"
+        class="img-fluid"
+        alt=""
+        style="
+          object-fit: cover;
+          object-position: 100% 0;
+          width: 180px;
+          height: 180px;
+          border-radius: 50%;
+          border: solid #e8f0ee 5px;
+        "
+      />
+      {% else %}
+      <div class="card-custom-avatar-profile">
+        <img
+          class="img-fluid"
+          src="{%static 'images/icon8.png'%}"
+          alt="Avatar"
+        />
+      </div>
+      {% endif %}
+    </div>
+
+    <ul class="list-inline">
+      <li class="list-inline-item">
+        <span>
+          <h4><strong>{{profile.username}}</strong></h4>
+        </span>
+      </li>
+      {% if profile.username == user.username %}
+      <li class="list-inline-item">
+        <a href="{% url 'edit_profile' %}" class="btn btn-sm btn-outline-dark"
+          ><strong>Edit Profile</strong></a
+        >
+      </li>
+      <li>
+        <span>
+          {% autoescape on %}
+          <h5 style="font-family: 'Arsenal', sans-serif">
+            <strong>{{profile_details.bio| safe}}</strong>
+          </h5>
+          {% endautoescape %}
+        </span>
+      </li>
+      {%endif%}
+    </ul>
+  </div>
+</div>
