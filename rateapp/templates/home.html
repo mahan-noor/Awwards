@@ -1,0 +1,144 @@
+{%extends 'base.html'%}
+{%load static%}
+{% block content %}
+{{block.super}}
+
+<div class="landing">
+    <div class="cover container-fluid">
+        <div class="heading">
+            <div class="container">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row item">
+                                <div class="col-md-10 title"
+                                    style="text-align: right; padding-right: 5%; line-height: 22px;">
+                                    <p style="font-family: 'Arsenal', sans-serif; font-size: 30px; color: white;">For UI/UX peeps</p>
+                                    <p style="font-family: 'Arsenal', sans-serif; font-size: 30px; color: white;">& inspiring leaders of the web.</p>
+                                </div>
+                                <div class="col-md-2" style="text-align: right; border-left: solid white 1px;"">
+                                    <svg xmlns=" http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80"
+                                    viewBox="0 0 172 172" style=" fill:#000000;">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                        <g fill="#ffffff">
+                                            <path
+                                                d="M16.66922,20.64c-5.39736,0 -9.78922,4.46367 -9.78922,9.95047v117.32953c0,1.90232 1.54112,3.44 3.44,3.44h76.9364c-1.05264,-2.21192 -1.96198,-4.49952 -2.67406,-6.88h-70.82235v-75.68h144.48v22.42719c2.47336,1.72688 4.77816,3.67188 6.88,5.81844v-66.45516c0,-5.4868 -4.39186,-9.95047 -9.78922,-9.95047zM16.66922,27.52h138.66156c1.60648,0 2.90922,1.37455 2.90922,3.07047v31.32953h-144.48v-31.32953c0,-1.69592 1.30274,-3.07047 2.90922,-3.07047zM65.36,34.4v3.44v17.2h82.56v-20.64zM27.52,37.84c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c3.79972,0 6.88,-3.08028 6.88,-6.88c0,-3.79972 -3.08028,-6.88 -6.88,-6.88zM48.16,37.84c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c3.79972,0 6.88,-3.08028 6.88,-6.88c0,-3.79972 -3.08028,-6.88 -6.88,-6.88zM72.24,41.28h68.8v6.88h-68.8zM130.72,89.44c-22.75757,0 -41.28,18.52243 -41.28,41.28c0,22.75757 18.52243,41.28 41.28,41.28c22.75757,0 41.28,-18.52243 41.28,-41.28c0,-22.75757 -18.52243,-41.28 -41.28,-41.28zM130.72,96.32c0.62172,0 1.50563,0.32873 2.74797,1.77375c1.24234,1.44503 2.60005,3.88819 3.74906,7.04797c0.54145,1.48899 1.03234,3.15969 1.47812,4.93828h-15.95031c0.44578,-1.77859 0.93667,-3.44929 1.47812,-4.93828c1.14901,-3.15978 2.50672,-5.60294 3.74906,-7.04797c1.24234,-1.44503 2.12625,-1.77375 2.74797,-1.77375zM119.79531,98.1139c-0.74376,1.43246 -1.42101,2.98561 -2.03578,4.67625c-0.80314,2.20864 -1.46611,4.68923 -2.05594,7.28985h-12.49688c4.1447,-5.50912 9.9016,-9.73521 16.5886,-11.9661zM141.64469,98.1139c6.687,2.23088 12.4439,6.45698 16.5886,11.9661h-12.49688c-0.58983,-2.60061 -1.2528,-5.08121 -2.05594,-7.28985c-0.61478,-1.69064 -1.29202,-3.24379 -2.03578,-4.67625zM99.1889,116.96h15.27844c-0.44699,3.2655 -0.71236,6.72922 -0.82641,10.32h-17.13281c0.3605,-3.64042 1.27856,-7.10873 2.68078,-10.32zM121.39437,116.96h18.65125c0.47652,3.20754 0.73992,6.70248 0.86672,10.32h-20.38469c0.12679,-3.61752 0.3902,-7.11246 0.86672,-10.32zM146.97265,116.96h15.27844c1.40222,3.21127 2.32028,6.67958 2.68078,10.32h-17.13281c-0.11405,-3.59078 -0.37941,-7.0545 -0.82641,-10.32zM96.50813,134.16h17.13281c0.11405,3.59078 0.37941,7.0545 0.82641,10.32h-15.27844c-1.40222,-3.21127 -2.32028,-6.67958 -2.68078,-10.32zM120.52765,134.16h20.38469c-0.12679,3.61752 -0.3902,7.11246 -0.86672,10.32h-18.65125c-0.47652,-3.20754 -0.73992,-6.70248 -0.86672,-10.32zM147.79906,134.16h17.13281c-0.3605,3.64042 -1.27856,7.10873 -2.68078,10.32h-15.27844c0.44699,-3.2655 0.71236,-6.72922 0.82641,-10.32zM103.20672,151.36h12.49688c0.58983,2.60061 1.2528,5.08121 2.05594,7.28985c0.61478,1.69064 1.29202,3.24379 2.03578,4.67625c-6.687,-2.23088 -12.4439,-6.45698 -16.5886,-11.9661zM122.74485,151.36h15.95031c-0.44578,1.77859 -0.93667,3.44929 -1.47812,4.93828c-1.14901,3.15978 -2.50672,5.60294 -3.74906,7.04797c-1.24234,1.44503 -2.12625,1.77375 -2.74797,1.77375c-0.62172,0 -1.50563,-0.32872 -2.74797,-1.77375c-1.24234,-1.44503 -2.60005,-3.88819 -3.74906,-7.04797c-0.54145,-1.48899 -1.03234,-3.15969 -1.47812,-4.93828zM145.7364,151.36h12.49688c-4.1447,5.50912 -9.9016,9.73521 -16.5886,11.9661c0.74376,-1.43246 1.42101,-2.98561 2.03578,-4.67625c0.80314,-2.20864 1.46611,-4.68923 2.05594,-7.28985z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row item">
+                                <div class="col-md-2" style="text-align: left; border-right: solid white 1px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80"
+                                        viewBox="0 0 172 172" style=" fill:#000000;">
+                                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                                            <g fill="#ffffff">
+                                                <path
+                                                    d="M27.52,24.08c-5.68976,0 -10.32,4.63024 -10.32,10.32v103.2c0,5.68976 4.63024,10.32 10.32,10.32h77.31937c-1.08704,-2.15688 -2.08792,-4.45824 -3.01672,-6.88h-74.30265c-1.89888,0 -3.44,-1.54456 -3.44,-3.44v-86h130.72v43.0336c1.95048,0.94256 4.1452,1.89291 6.88,2.82859v-63.06219c0,-5.68976 -4.63024,-10.32 -10.32,-10.32zM27.52,30.96h123.84c1.89888,0 3.44,1.54456 3.44,3.44v10.32h-130.72v-10.32c0,-1.89544 1.54112,-3.44 3.44,-3.44zM30.96,34.4c-1.89986,0 -3.44,1.54014 -3.44,3.44c0,1.89986 1.54014,3.44 3.44,3.44c1.89986,0 3.44,-1.54014 3.44,-3.44c0,-1.89986 -1.54014,-3.44 -3.44,-3.44zM41.28,34.4c-1.89986,0 -3.44,1.54014 -3.44,3.44c0,1.89986 1.54014,3.44 3.44,3.44c1.89986,0 3.44,-1.54014 3.44,-3.44c0,-1.89986 -1.54014,-3.44 -3.44,-3.44zM51.6,34.4c-1.89986,0 -3.44,1.54014 -3.44,3.44c0,1.89986 1.54014,3.44 3.44,3.44c1.89986,0 3.44,-1.54014 3.44,-3.44c0,-1.89986 -1.54014,-3.44 -3.44,-3.44zM137.6,96.32c-5.16,0 -8.59731,1.71865 -12.72531,3.78265c-4.128,2.064 -9.288,4.47335 -18.92,6.53735l-2.75469,0.68531v2.75469c0,44.72 31.648,60.88935 32.68,61.57735l1.72,0.68531l1.72,-0.68531c1.376,-0.688 32.68,-18.23335 32.68,-61.57735v-2.75469l-2.75469,-0.68531c-9.632,-2.064 -14.792,-4.47335 -18.92,-6.53735c-4.128,-2.064 -7.56531,-3.78265 -12.72531,-3.78265zM137.6,103.2c3.784,0 5.85069,1.03335 9.63469,3.09735c4.128,1.72 9.28531,4.47334 17.88531,6.53734c-1.032,31.992 -21.672,47.816 -27.52,51.6c-6.192,-3.44 -26.488,-18.232 -27.52,-51.6c8.944,-2.064 14.10131,-4.81734 17.88531,-6.53734c3.784,-2.064 5.85069,-3.09735 9.63469,-3.09735z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="col-md-10 title" style="text-align: left; padding-left: 5%; line-height: 22px;">
+                                    <p style="font-family: 'Arsenal', sans-serif; font-size: 30px; color: white;">Award platform that showcase </p>
+                                    <p style="font-family: 'Arsenal', sans-serif; font-size: 30px; color: white;">& Awwards projects for developers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row item">
+                                <div class="col-md-10 title" style="text-align: right; padding-right: 5%; line-height: 22px;">
+                                    <p style="font-family: 'Arsenal', sans-serif; font-size: 30px; color: white;">Be
+                                        Inspired. Be Inspiring.</p>
+                                    <p style="font-family: 'Arsenal', sans-serif; font-size: 30px; color: white;">
+                                        Pushing the boundaries of UI, & innovative development.
+                                    </p>
+                                </div>
+                                <div class="col-md-2" style="text-align: right; border-left: solid white 1px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80"
+                                        viewBox="0 0 172 172" style=" fill:#000000;">
+                                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                            stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                            stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                            font-weight="none" font-size="none" text-anchor="none"
+                                            style="mix-blend-mode: normal">
+                                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                                            <g fill="#ffffff">
+                                                <path
+                                                    d="M10.32,17.2c-5.65719,0 -10.32,4.66281 -10.32,10.32v127.28h172v-116.96c0,-5.65719 -4.66281,-10.32 -10.32,-10.32h-100.19l-1.51844,-3.84312c-1.57219,-3.89688 -5.375,-6.47688 -9.59438,-6.47688zM10.32,24.08h40.05719c1.42438,0 2.67406,0.84656 3.19813,2.16344l3.26531,8.15656h104.83937c1.94844,0 3.44,1.49156 3.44,3.44v110.08h-158.24v-120.4c0,-1.94844 1.49156,-3.44 3.44,-3.44zM27.52,79.12l6.3425,24.24125h5.805l3.9775,-14.84844h0.30906l4.04469,14.84844h5.77813l6.32906,-24.24125h-6.35594l-3.17125,16.07125h-0.29562l-4.01781,-16.07125h-4.93156l-3.88344,16.07125h-0.30906l-3.225,-16.07125zM66.435,79.12l6.3425,24.24125h5.805l3.9775,-14.84844h0.30906l4.04469,14.84844h5.76469l6.3425,-24.24125h-6.35594l-3.17125,16.07125h-0.29562l-4.01781,-16.07125h-4.93156l-3.88344,16.07125h-0.30906l-3.225,-16.07125zM105.35,79.12l6.3425,24.24125h5.805l3.9775,-14.84844h0.30906l4.04469,14.84844h5.77813l6.32906,-24.24125h-6.35594l-3.17125,16.07125h-0.29562l-4.01781,-16.07125h-4.93156l-3.88344,16.07125h-0.30906l-3.225,-16.07125zM145.38031,97.5025c-2.12313,0 -3.38625,1.31688 -3.38625,3.225c0,1.88125 1.26312,3.18469 3.38625,3.18469c2.12312,0 3.38625,-1.30344 3.38625,-3.18469c0,-1.90812 -1.26313,-3.225 -3.38625,-3.225z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row pt-5 m-auto">
+        {% if projects%}
+        {% for item in projects %}
+        <div class="col-md-6 col-lg-4 pb-3">
+            <div class="card card-custom bg-white border-white border-0">
+                <div>
+                    <img src="{{item.img.cdn_url}}" alt="" class="img-fluid">
+                </div>
+                
+                {% if item.profile.profile.profile_pic %}
+                <div class="card-custom-avatar">
+                    <a href="{%url 'profile' item.profile.username%}">
+                        <img class="img-fluid" src="{{item.profile.profile.profile_pic.cdn_url}}" alt="Avatar" style="border: solid #eaf1efdc 3.5px;">
+                    </a>
+                    
+                </div>
+                {% else %}
+                <div class="card-custom-avatar">
+                    <img class="img-fluid" src="{%static 'images/icon8.png'%}" alt="Avatar"style="border: solid #eaf1efdc 3.5px;">
+                </div>
+                {% endif %}
+
+
+
+                <div class="card-body" style="overflow-y: auto">
+                    <h4 class="card-title"><strong>{{item.title}}</strong></h4>
+                    <p class="card-text"><strong>About: </strong> <span
+                            style="font-family: 'Arsenal', sans-serif;">{{item.description}}</span></p>
+                </div>
+                <div class="card-footer" style="background: inherit; border-color: inherit; border: none;">
+                    <a href="#" class="btn btn-dark rounded rounded-pill btn-block">Review</a>
+                    <a href="{{item.live_site}}" class="btn btn-outline-dark rounded rounded-pill btn-block">Go To Site</a>
+                </div>
+
+
+            </div>
+
+        </div>
+        {% endfor %}
+
+    </div>
+    {% else %}
+    <div class="row">
+        <h2 class="text-center" style="color: #808383;">There are No Projects yet ...</h2>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
