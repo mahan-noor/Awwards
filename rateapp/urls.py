@@ -8,6 +8,8 @@ urlpatterns=[
     path('new/project', views.new_project, name='new-project'),
     path('search/', views.search_results, name='search_results'),
     re_path('user/(?P<username>\w+)', views.profile, name='profile'),
+    path('accounts/edit/', views.edit_profile, name='edit_profile'),
+
 
 
 ]
