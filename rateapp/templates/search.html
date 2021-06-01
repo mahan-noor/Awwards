@@ -1,0 +1,47 @@
+{%extends 'base.html'%}
+{% block content %}
+
+<div class="container">
+    <div class="row pt-5 m-auto">
+        {% if projects%}
+        <h2>Found {{ projects|length }} of searched term "{{message}}"</h2>
+        {% else %}
+        <h2> Found 0 Projects for the search term "{{message}}"</h2>
+        {% endif %}
+    </div>
+    <dir class="row pt-5 m-auto">
+        {% if projects%}
+        {% for item in projects %}
+        <div class="col-md-6 col-lg-4 pb-3">
+            
+            <div class="card card-custom bg-white border-white border-0">
+                <div>
+                    <img src="{{item.img.cdn_url}}" alt="" class="img-fluid">
+                </div>
+                <div class="card-custom-avatar">
+                    <img class="img-fluid"
+                        src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg"
+                        alt="Avatar" />
+                </div>
+
+                <div class="card-body" style="overflow-y: auto">
+                    <h4 class="card-title"><strong>{{item.title}}</strong></h4>
+                    <p class="card-text"><strong>About: </strong> <span
+                            style="font-family: 'Arsenal', sans-serif;">{{item.description}}</span></p>
+                </div>
+                <div class="card-footer" style="background: inherit; border-color: inherit; border: none;">
+                    <a href="#" class="btn btn-dark rounded rounded-pill btn-block">Review</a>
+                    <a href="{{item.live_site}}" class="btn btn-outline-dark rounded rounded-pill btn-block">Go To Site</a>
+                </div>
+
+
+            </div>
+            
+
+        </div>
+        {% endfor %}
+        {% endif %}
+    </dir>
+</div>
+
+{% endblock %}
