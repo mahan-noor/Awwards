@@ -56,3 +56,39 @@
     </ul>
   </div>
 </div>
+<dir class="row pt-5 m-auto">
+    {% if projects%}
+    {% for item in projects %}
+    <div class="col-md-6 col-lg-4 pb-3">
+
+        <div class="card card-custom bg-white border-white border-0">
+            <div>
+                <img src="{{item.img.cdn_url}}" alt="" class="img-fluid">
+            </div>
+            <!-- <div class="card-custom-img"
+                                style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);">
+                            </div> -->
+
+            <div class="card-body" style="overflow-y: auto">
+                <h4 class="card-title"><strong>{{item.title}}</strong></h4>
+                <p class="card-text"><strong>About: </strong> <span
+                        style="font-family: 'Arsenal', sans-serif;">{{item.description}}</span></p>
+            </div>
+            <div class="card-footer" style="background: inherit; border-color: inherit; border: none;">
+                <a href="#" class="btn btn-dark rounded rounded-pill btn-block">Review</a>
+                <a href="{{item.live_site}}" class="btn btn-outline-dark rounded rounded-pill btn-block">Go To Site</a>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    {% endfor %}
+    {% endif %}
+</dir>
+</div>
+
+
+
+{% endblock %}
