@@ -100,13 +100,13 @@
         <div class="col-md-6 col-lg-4 pb-3">
             <div class="card card-custom bg-white border-white border-0">
                 <div>
-                    <img src="{{item.img.cdn_url}}" alt="" class="img-fluid">
+                    <img src="{{item.img.url}}" alt="" class="img-fluid">
                 </div>
                 
                 {% if item.profile.profile.profile_pic %}
                 <div class="card-custom-avatar">
                     <a href="{%url 'profile' item.profile.username%}">
-                        <img class="img-fluid" src="{{item.profile.profile.profile_pic.cdn_url}}" alt="Avatar" style="border: solid #eaf1efdc 3.5px;">
+                        <img class="img-fluid" src="{{item.profile.profile.profile_pic.url}}" alt="Avatar" style="border: solid #eaf1efdc 3.5px;">
                     </a>
                     
                 </div>
