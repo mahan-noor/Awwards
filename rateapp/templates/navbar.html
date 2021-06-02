@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="nav navbar-nav navbar-center">
-            <a href="{% url 'index' %}" class="navbar-brand">
+            <a href="{% url 'home' %}" class="navbar-brand">
         </div>
         <div class="navbar-right">
 
@@ -32,7 +32,7 @@
     </div>
     {% endif %}
     <a href="{%url 'new-project'%}" style="color: green;">Submit</a>
-    <a href="{%url 'index'%}">Home</a>
+    <a href="{%url 'home'%}">Home</a>
     <a href="{% url 'profile' username=user %}">Profile</a>
     <a href="/accounts/password/change">Change Password</a>
     <a href="/logout">Logout</a>

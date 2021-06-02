@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% if title %}
-    <title>Awwards - {{title}}</title>
+    <title>Homage - {{title}}</title>
     {% else %}
-    <title> Awwards </title>
+    <title> Homage </title>
     {% endif %}
 
 
@@ -20,12 +20,11 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Arsenal:400i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allura|Caveat|Cookie|Courgette|Damion|Gloria+Hallelujah|Gochi+Hand|Kalam|Nanum+Pen+Script|Oleo+Script|Playball|Reenie+Beanie|Satisfy&display=swap" rel="stylesheet">
     {% endblock %}
 </head>
-
 
 <body>
     {% include "navbar.html" %}
@@ -42,7 +41,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="{% static 'scripts/main.js' %}"></script>
+    <script src="{% static 'script/main.js' %}"></script>
     {% bootstrap_javascript %}
     {% endblock %}
 

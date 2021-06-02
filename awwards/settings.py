@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'rateapp',
     'bootstrap4',
     'tinymce',
+    'cloudinary',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

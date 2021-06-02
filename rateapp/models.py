@@ -11,8 +11,6 @@ class Profile(models.Model):
     profile_pic = CloudinaryField('1080x1080')
     contact_info = models.CharField(max_length=144)
     
-    def __str__(self):
-        return self.content
 
 
     @classmethod
@@ -35,8 +33,6 @@ class Project(models.Model):
     live_site = models.URLField(max_length=250)
 
 
-    def __str__(self):
-        return self.content
 
     @classmethod
     def get_projects(cls):
